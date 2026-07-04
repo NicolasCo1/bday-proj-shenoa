@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Shenoa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" src="assets/musica.mp3" preload="auto" loop></audio>
+
+  <div id="entryScreen" class="entry-screen">
+    <div class="entry-glow"></div>
+    <div class="entry-card">
+      <p class="eyebrow">Tengo algo para ti...</p>
+      <h1>AMORSIOOOOO TIENES QUE VER ESTOOO</h1>
+      
+      <button id="enterBtn" class="primary-btn">Haz clic aquí, mi osho</button>
+    </div>
+  </div>
+
+  <main id="mainContent" class="main-content" aria-hidden="true">
+    <section class="hero section visible-on-load">
+      <div class="hero-copy">
+        <p class="eyebrow">Para Shenoa</p>
+        <h2>Para celebrar la vida de la persona más importante de la mía.</h2>
+        
+      </div>
+      <div class="hero-polaroids" aria-label="Collage de fotos">
+        <figure class="polaroid polaroid-a"><img src="assets/foto-01.jpg" alt="Recuerdo de Shenoa" /></figure>
+        <figure class="polaroid polaroid-b"><img src="assets/foto-02.jpg" alt="Recuerdo juntos" /></figure>
+        <figure class="polaroid polaroid-c"><img src="assets/foto-06.jpg" alt="Recuerdo de Shenoa" /></figure>
+      </div>
+    </section>
+
+    <section class="letter-section section reveal">
+      <div class="section-label">Primero, una carta</div>
+      <div class="letter-card">
+        <div class="letter-topline"></div>
+        <h3>Mi fashion killa,</h3>
+        <p>
+          Este dia no es un dia cualquiera, porque tu no eres una persona cualquiera. Quiero compartirlo contigo y que sepas lo importante que eres para mi. Vistete bonito como siempre lo haces y ponte lista para una invitación muy especial
+        </p>
+        <button id="openDateBtn" class="secondary-btn">Abrir la fecha</button>
+      </div>
+    </section>
+
+    <section id="dateReveal" class="date-reveal section hidden-panel" aria-live="polite">
+      <p class="eyebrow">Reserva este día</p>
+      <h2>Miércoles 8 de julio</h2>
+      
+
+      <div class="countdown" aria-label="Cuenta regresiva para el miércoles 8 de julio">
+        <div class="time-box"><span id="days">00</span><small>días</small></div>
+        <div class="time-box"><span id="hours">00</span><small>horas</small></div>
+        <div class="time-box"><span id="minutes">00</span><small>min</small></div>
+        <div class="time-box"><span id="seconds">00</span><small>seg</small></div>
+      </div>
+    </section>
+
+    <section class="gallery-section section reveal">
+      <div class="section-label">Un poquito de nosotros</div>
+      <div class="collage-grid">
+        <figure class="memory-card tilt-left"><img src="assets/foto-03.jpg" alt="Recuerdo de Shenoa" /></figure>
+        <figure class="memory-card tilt-right"><img src="assets/foto-04.jpg" alt="Recuerdo juntos" /></figure>
+        <figure class="memory-card tilt-left soft-hide-mobile"><img src="assets/foto-05.jpg" alt="Recuerdo de Shenoa" /></figure>
+        <figure class="memory-card tilt-right soft-hide-mobile"><img src="assets/foto-07.jpg" alt="Recuerdo juntos" /></figure>
+      </div>
+    </section>
+
+    <section class="carousel-section section reveal">
+      <div class="section-label">Nuestros momentos</div>
+      
+      <div class="carousel" id="carousel" tabindex="0" aria-label="Carrusel de fotos">
+        <div class="slide"><img src="assets/foto-01.jpg" alt="Foto 1" /></div>
+        <div class="slide"><img src="assets/foto-02.jpg" alt="Foto 2" /></div>
+        <div class="slide"><img src="assets/foto-03.jpg" alt="Foto 3" /></div>
+        <div class="slide"><img src="assets/foto-04.jpg" alt="Foto 4" /></div>
+        <div class="slide"><img src="assets/foto-05.jpg" alt="Foto 5" /></div>
+        <div class="slide"><img src="assets/foto-06.jpg" alt="Foto 6" /></div>
+        <div class="slide"><img src="assets/foto-07.jpg" alt="Foto 7" /></div>
+        <div class="slide"><img src="assets/foto-08.jpg" alt="Foto 8" /></div>
+        <div class="slide"><img src="assets/foto-09.jpg" alt="Foto 9" /></div>
+        <div class="slide"><img src="assets/foto-10.jpg" alt="Foto 10" /></div>
+      </div>
+    </section>
+
+    <section class="answer-section section reveal">
+      <div class="answer-card">
+        <p class="eyebrow">Entonces...</p>
+        <h2>¿Aceptas esta invitación?</h2>
+        <p class="subtext">Piensalo bien</p>
+        <div class="answer-buttons">
+          <button id="yesBtn" class="primary-btn">Sí, obvio mi osho</button>
+          <button id="noBtn" class="ghost-btn">Mmm… no sé</button>
+        </div>
+        <div id="finalMessage" class="final-message" aria-live="polite">
+          <p>Prometo hacerte sentir tan especial como tú me haces sentir a mí.</p>
+          <strong>Te amo.</strong>
+          <span>De tu osho</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
